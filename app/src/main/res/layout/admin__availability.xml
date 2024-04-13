@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <CalendarView
+            android:id="@+id/calendarViewManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="שעות פעילות" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="שעות:" />
+
+            <EditText
+                android:id="@+id/editTextSundayStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Start Time" />
+
+            <EditText
+                android:id="@+id/editTextSundayEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="End Time" />
+        </LinearLayout>
+
+        <!-- Repeat the above layout for Monday to Saturday -->
+
+        <!-- Toggle buttons for off days -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="יום חופש:" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonSunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="יום חופש" />
+        </LinearLayout>
+
+        <!-- Repeat the above layout for Monday to Saturday -->
+
+        <!-- Button to apply changes -->
+        <Button
+            android:id="@+id/buttonApplyChanges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="שמור" />
+
+        <!-- Input fields for start and end times -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

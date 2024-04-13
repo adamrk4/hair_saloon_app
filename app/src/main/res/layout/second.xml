@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ניהול תורים במספרה"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonNewAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/black"
+        android:text="קביעת תור חדש" />
+
+    <Button
+        android:id="@+id/buttonCancelAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonNewAppointment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/black"
+        android:text="ביטול תור" />
+
+    <!-- Existing buttons -->
+
+    <Button
+        android:id="@+id/buttonViewAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="צפייה בתורים קיימים"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonCancelAppointment"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="עריכת פרופיל"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonViewAppointments"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="יצירת קשר"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonEditProfile"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/first">
+
+    <fragment
+        android:id="@+id/first"
+        android:name="com.example.final_p.fragments.first"
+        android:label="first" >
+        <action
+            android:id="@+id/action_first_to_second"
+            app:destination="@id/second" />
+        <action
+            android:id="@+id/action_first_to_manager_login"
+            app:destination="@id/manager_login" />
+        <action
+            android:id="@+id/action_first_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/second"
+        android:name="com.example.final_p.fragments.second"
+        android:label="second" >
+        <action
+            android:id="@+id/action_second_to_making_appointment"
+            app:destination="@id/making_appointment" />
+        <action
+            android:id="@+id/action_second_to_my_appointments"
+            app:destination="@id/my_appointments" />
+        <action
+            android:id="@+id/action_second_to_cancelAPT"
+            app:destination="@id/cancelAPT" />
+    </fragment>
+    <fragment
+        android:id="@+id/manager_login"
+        android:name="com.example.final_p.fragments.manager_login"
+        android:label="manager_login" >
+        <action
+            android:id="@+id/action_manager_login_to_adminDashboard"
+            app:destination="@id/adminDashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.final_p.fragments.register"
+        android:label="register" >
+        <action
+            android:id="@+id/action_register_to_second"
+            app:destination="@id/second" />
+    </fragment>
+    <fragment
+        android:id="@+id/making_appointment"
+        android:name="com.example.final_p.fragments.making_appointment"
+        android:label="making_appointment" />
+    <fragment
+        android:id="@+id/adminDashboard"
+        android:name="com.example.final_p.fragments.adminDashboard"
+        android:label="adminDashboard" >
+        <action
+            android:id="@+id/action_adminDashboard_to_admin_Availability"
+            app:destination="@id/admin_Availability" />
+    </fragment>
+    <fragment
+        android:id="@+id/my_appointments"
+        android:name="com.example.final_p.fragments.My_appointments"
+        android:label="my_appointments"
+        tools:layout="@layout/my_appointments" />
+    <fragment
+        android:id="@+id/cancelAPT"
+        android:name="com.example.final_p.fragments.CancelAPT"
+        android:label="cancel_a_p_t"
+        tools:layout="@layout/cancel_a_p_t" />
+    <fragment
+        android:id="@+id/admin_Availability"
+        android:name="com.example.final_p.fragments.Admin_Availability"
+        android:label="Admin_Availability" />
+</navigation>
